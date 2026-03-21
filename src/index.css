@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 270 10% 98%;
+    --foreground: 270 20% 12%;
+
+    --card: 270 8% 96%;
+    --card-foreground: 270 20% 12%;
+
+    --popover: 270 10% 98%;
+    --popover-foreground: 270 20% 12%;
+
+    --primary: 276 40% 32%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 140 22% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 8% 91%;
+    --muted-foreground: 270 10% 42%;
+
+    --accent: 32 60% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 270 8% 88%;
+    --input: 270 8% 88%;
+    --ring: 276 40% 32%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 270 8% 96%;
+    --sidebar-foreground: 270 15% 25%;
+    --sidebar-primary: 276 40% 32%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 8% 92%;
+    --sidebar-accent-foreground: 270 20% 12%;
+    --sidebar-border: 270 8% 88%;
+    --sidebar-ring: 276 40% 32%;
+
+    /* Custom tokens */
+    --font-display: 'Instrument Serif', serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    --shadow-card: 0 0 0 1px rgba(0,0,0,.04), 0 2px 4px rgba(0,0,0,.02), 0 8px 16px rgba(0,0,0,.04);
+    --shadow-elevated: 0 0 0 1px rgba(0,0,0,.04), 0 4px 8px rgba(0,0,0,.04), 0 16px 32px rgba(0,0,0,.06);
+    --transition-smooth: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 270 15% 8%;
+    --foreground: 270 10% 95%;
+    --card: 270 15% 10%;
+    --card-foreground: 270 10% 95%;
+    --popover: 270 15% 10%;
+    --popover-foreground: 270 10% 95%;
+    --primary: 276 40% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 140 22% 38%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 270 12% 18%;
+    --muted-foreground: 270 10% 60%;
+    --accent: 32 60% 50%;
+    --accent-foreground: 0 0% 100%;
+    --border: 270 12% 20%;
+    --input: 270 12% 20%;
+    --ring: 276 40% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    line-height: 1.6;
+    text-wrap: pretty;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .transition-smooth {
+    transition: all var(--transition-smooth);
+  }
+}
