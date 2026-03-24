@@ -1,33 +1,33 @@
 import { Wifi, Wind, Tv, Bath, Users } from "lucide-react";
 import { Link } from "react-router-dom";
-import roomStandard from "@/assets/room-standard.jpg";
 import roomSuite from "@/assets/room-suite.jpg";
 import roomFamily from "@/assets/room-family.jpg";
+import roomStandard from "@/assets/room-standard.jpg";
 
 const rooms = [
   {
-    name: "Quarto Triplo",
-    image: roomStandard,
+    name: "individual",
+    image: roomSuite,
     badge: "Mais Reservado",
-    capacity: "2 hóspedes",
+    capacity: "1 hóspedes",
     amenities: [Wifi, Wind, Tv, Bath],
-    price: "R$ 150",
+    price: "R$ 130",
   },
   {
     name: "Suíte Casal",
-    image: roomSuite,
+    image: roomFamily,
     badge: "Destaque",
     capacity: "2 hóspedes",
     amenities: [Wifi, Wind, Tv, Bath],
-    price: "R$ 200",
+    price: "R$ 180",
   },
   {
-    name: "Quarto Família",
-    image: roomFamily,
+    name: "Quarto Triplo",
+    image: roomStandard,
     badge: null,
-    capacity: "4 hóspedes",
+    capacity: "3 hóspedes",
     amenities: [Wifi, Wind, Tv, Bath],
-    price: "R$ 280",
+    price: "R$ 230",
   },
 ];
 

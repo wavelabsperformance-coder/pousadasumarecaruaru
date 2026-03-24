@@ -1,34 +1,34 @@
 import Layout from "@/components/Layout";
 import { Wifi, Wind, Tv, Bath, Users, Refrigerator } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
-import roomStandard from "@/assets/room-standard.jpg";
 import roomSuite from "@/assets/room-suite.jpg";
 import roomFamily from "@/assets/room-family.jpg";
+import roomStandard from "@/assets/room-standard.jpg";
 
 const rooms = [
   {
-    name: "Quarto Standard",
-    image: roomStandard,
-    description: "Quarto confortável e funcional, ideal para casais ou viajantes individuais. Equipado com tudo que você precisa para uma estadia tranquila.",
-    capacity: "Até 2 hóspedes",
+    name: "Quarto Individual",
+    image: roomSuite,
+    description: "Um ambiente acolhedor e elegante, ideal para viajantes individuais que valorizam conforto e praticidade. Equipado com tudo para proporcionar uma experiência agradável e sem preocupações.",
+    capacity: "Até 1 hóspedes",
     amenities: ["Ar-condicionado", "TV de tela plana", "Wi-Fi gratuito", "Banheiro privativo", "Frigobar", "Roupa de cama premium"],
-    price: "R$ 150",
+    price: "R$ 130",
   },
   {
     name: "Suíte Casal",
-    image: roomSuite,
-    description: "Suíte espaçosa com decoração acolhedora e banheiro privativo amplo. Perfeita para quem busca mais conforto e privacidade.",
+    image: roomFamily,
+    description: "Mais espaço, conforto e total privacidade. Uma suíte ampla, com decoração acolhedora e banheiro privativo espaçoso, perfeita para quem busca uma experiência mais completa..",
     capacity: "Até 2 hóspedes",
     amenities: ["Ar-condicionado", "TV de tela plana", "Wi-Fi gratuito", "Banheiro privativo amplo", "Frigobar", "Mesa de trabalho"],
-    price: "R$ 200",
+    price: "R$ 180",
   },
   {
-    name: "Quarto Família",
-    image: roomFamily,
-    description: "Espaçoso quarto familiar com duas camas, ideal para famílias ou grupos. Conforto e praticidade para todos.",
-    capacity: "Até 4 hóspedes",
+    name: "Quarto TRiplo",
+    image: roomStandard,
+    description: "Espaço ideal para quem viaja acompanhado. Confortável e bem distribuído, oferece praticidade e comodidade para todos, garantindo uma estadia agradável para famílias ou grupos.",
+    capacity: "Até 3 hóspedes",
     amenities: ["Ar-condicionado", "TV de tela plana", "Wi-Fi gratuito", "Banheiro privativo", "Frigobar", "Espaço amplo"],
-    price: "R$ 280",
+    price: "R$ 230",
   },
 ];
 
