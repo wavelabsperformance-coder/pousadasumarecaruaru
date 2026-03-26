@@ -13,6 +13,7 @@ import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import TermosDeUso from "./pages/TermosDeUso";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobre" element={<Sobre />} />
