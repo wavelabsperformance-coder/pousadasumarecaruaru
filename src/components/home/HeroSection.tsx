@@ -16,7 +16,7 @@ const HeroSection = () => {
 
   return (
   <>
-    <section className="relative h-[45vh] md:h-[65vh]">
+    <section className="relative h-[50vh] md:h-[65vh]">
       {/* Background */}
       <div className="absolute inset-0">
         <img
