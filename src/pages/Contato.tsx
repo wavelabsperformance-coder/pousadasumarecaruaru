@@ -47,7 +47,7 @@ const Contato = () => {
                   <Mail className="text-primary shrink-0 mt-1" size={20} />
                   <div>
                     <h3 className="font-semibold text-foreground text-sm">E-mail</h3>
-                    <p className="text-sm text-muted-foreground">contato@pousadasumare.com.br</p>
+                    <p className="text-sm text-muted-foreground">pousadasumare1@gmail.com</p>
                   </div>
                 </div>
               </div>

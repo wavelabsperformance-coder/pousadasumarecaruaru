@@ -5,7 +5,7 @@ const amenities = [
   { icon: Car, label: "Estacionamento", desc: "Estacionamento gratuito e seguro" },
   { icon: Coffee, label: "Café da Manhã", desc: "Café regional incluso na diária" },
   { icon: Bed, label: "Quartos Confortáveis", desc: "Camas de qualidade e roupa de cama premium" },
-  { icon: Users, label: "Pet Friendly", desc: "Ambiente acolhedor para você e seu pet" },
+  { icon: Users, label: "Pet Friendly", desc: "Consulte as políticas e taxas" },
   { icon: Shield, label: "Ambiente Seguro", desc: "Tranquilidade para sua família" },
   { icon: Sparkles, label: "Limpeza Impecável", desc: "Higiene e cuidado em cada detalhe" },
   { icon: MapPin, label: "Localização Estratégica", desc: "Próxima aos pontos turísticos" },
